@@ -1,0 +1,48 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/google-map/google-map.html">
+<link rel="import" href="../bower_components/google-map/google-map-marker.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="my-map">
+    <template>
+        <style include="shared-styles">
+            :host {
+                display: block;
+
+                padding: 10px;
+            }
+
+            google-map {
+                height: 600px;
+            }
+        </style>
+
+        <div class="card">
+            <h1>Map</h1>
+            <google-map id="map" api-key="AIzaSyCokamVPfqbNIl_Uef-x1_9K3YWZUXGNNU" fit-to-markers="">
+                <google-map-marker slot="markers" latitude="12.97" longitude="77.59"
+                                   draggable="true"></google-map-marker>
+            </google-map>
+        </div>
+    </template>
+
+    <script>
+        class MyMap extends Polymer.Element {
+            static get is() {
+                return 'my-map';
+            }
+        }
+
+        window.customElements.define(MyMap.is, MyMap);
+    </script>
+</dom-module>
