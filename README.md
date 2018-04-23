@@ -1,6 +1,8 @@
-# Polymer App Toolbox - Starter Kit
+# Polymer in Action Demo
 
 Sample app from the [Polymer in Action](http://www.developermarch.com/developersummit/session.html?insert=kittoman2) presentation, originally presented at the [Great Indian Developer Summit](http://www.developermarch.com/developersummit) in 2018.
+
+This is a simple app built from the Polymer Starter Kit that uses Firebase Auth, Google Maps, YouTube, and the Vaadin Grid.
 
 Slides: http://virtua.tech/slides/polymer-in-action/
 
